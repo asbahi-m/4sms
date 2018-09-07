@@ -16,6 +16,11 @@ body {
 a, a:hover, .btn-link:hover, .btn-link:focus {
     text-decoration: none;
 }
+a:hover {
+    opacity: 0.8;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
 
 /* Text Color Default Style */
 .text-primary {
@@ -31,7 +36,7 @@ a.text-secondary:hover, .btn-link.text-secondary:hover {
     color: #603f86 !important;
 }
 .text-light {
-    color: #eeeeee !important;
+    color: #eee !important;
 }
 a.text-light:hover, .btn-link.text-light:hover {
     color: #dbdbdb !important;
@@ -293,6 +298,47 @@ section header hr{
     padding: 20px;
     border: 1px solid #78be44;
     border-radius: 20px;
+}
+
+/* Section Clients Style */
+.clients {
+    background: radial-gradient(rgba(0,0,0,0.7) 100%, rgba(0,0,0,0) 100%), url(../images/parlix.png);
+    background-position: center;
+    background-size: cover;
+}
+.clients img {
+    max-height: 93px;
+    padding: 2px;
+    border: 1px solid #78be44;
+    border-radius: 100%;
+}
+
+/* Default Style For Pages */
+main .heading {
+    background-image: url(../images/breadcrumb.png);
+    background-size: cover;
+    background-position: center;
+}
+main .heading .title {
+    margin-right: 10%;
+}
+
+main .heading .breadcrumb {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    background: unset;
+    border-radius: 0;
+    margin: 0
+}
+main .heading .breadcrumb a {
+    color: #78be44;
+}
+main .heading .breadcrumb .active {
+    color: #323232;
+}
+main .heading .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+    color: #fff;
 }
 
 /* Footer Style */
