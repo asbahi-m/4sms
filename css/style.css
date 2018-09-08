@@ -92,11 +92,20 @@ a.text-dark:hover, .btn-link.text-dark:hover {
 }
 
 /* Form Default Style */
-form, .form-control::placeholder, .form-control:focus, .custom-select:focus {
+form {
     color: #78be44 !important;
 }
+
+.form-control {
+    color: #3f2b56 !important;
+}
+.form-control::placeholder {
+    color: #c0c0c0 !important;
+}
 .form-control:focus, .custom-select:focus {
+    color: #78be44 !important; 
     box-shadow: 0 0 0 0.2rem rgba(120, 190, 68, 0.25) !important;
+    border-color: #78be44;
 }
 form select {
     padding-top: 0 !important;
