@@ -75,62 +75,23 @@
     
     <a id="backToTop" title="Back to top" href="#"><span class="fa fa-angle-up"></span></a>
 
-    <main id="aboutUs-page">
+    <main id="packages-page">
 
       <!-- Heading Page -->
       <div class="container-fluid heading">
         <div class="container">
           <div class="title my-auto py-5 text-white text-center">
-            <h1>تعرف علينا</h1>
+            <h1>الباقات</h1>
             <div class="font-weight-bold">4SMS alwayz connect</div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-                <li class="breadcrumb-item active" aria-current="page">تعرف علينا</li>
+                <li class="breadcrumb-item active" aria-current="page">الباقات</li>
               </ol>
             </nav>
           </div>
         </div>
       </div>
-
-      <section class="about-us container">
-        <div class="row">
-          <div class="col-lg-9 col-md-7 order-1 order-md-0 my-auto">
-              <h1>تعرف علينا</h1>
-              <article>
-                <h2 class="text-justify">ما هي الخدمة المميزة التي يقدمها موقعنا لرسائل الجوال؟</h2>
-                <p>
-                    من خلال موقعنا يمكنك إرسال الرسائل عبر الإنترنت إما بشكل فردي أو بشكل مجموعات، 
-                    ويتيح موقعنا خدمة إرسال رسائل الجوال عن طريق التوقيت، ويتم تحديد وقت الإرسال واليوم والتاريخ من قبل العميل.
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ 
-                    عن التركيز على الشكل الخارجي للنص أو شكل توضح الفقرات في الصفحة التي يقرأها. 
-                    ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاً طبيعياً -إلى حدٍ ما- للأحرف 
-                    عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو ...
-                </p>
-              </article>
-              <a class="btn btn-primary mr-2" role="button">اشترك الآن</a>
-              <a class="btn btn-light ml-2" role="button">تعرف على المزيد</a>
-          </div>
-          <div class="col-lg-3 col-md-5 order-0 order-md-1 mb-3 my-md-auto text-center">
-            <img class="img-fluid" src="images/mobile4sms.png" alt="Moblie 4SMS" >
-          </div>
-        </div>
-      </section>
-
-      <section class="clients container-fluid py-3">
-        <div class="container text-center text-white">
-          <h1>آراء العملاء</h1>
-          <p class="text-center">
-            <span class="fa fa-quote-right mr-2"></span>
-            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ 
-            عن التركيز على الشكل الخارجي للنص، أو شكل توضع الفقرات في الصفحة التي يقرأها.
-            ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
-            <span class="fa fa-quote-left ml-2"></span>
-          </p>
-          <div><img src="images/picprofile.png" alt="picprofile" class="img-fluid p-1"></div>
-          <small class="font-weight-bold"><span class="text-primary">وائل هندام</span> ، مدير عام موقع</small>
-        </div>
-      </section>
 
       <section class="packages container">
         <header class="mb-4">
@@ -169,6 +130,35 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="cost-messages container col-lg-4 col-md-8 col-sm-9">
+        <header class="mb-4">
+          <h1 class="text-center">حساب تكلفة الرسائل</h1>
+          <hr>
+        </header>
+        <form class="text-center">
+          <div class="form-group">
+            <input type="number" class="form-control" id="messages" placeholder="عدد الرسائل">
+          </div>
+          <div class="form-group">
+            <select class="custom-select my-1 mr-sm-2" id="coinType">
+              <option value="1" selected>ريال سعودي</option>
+              <option value="2">دولار أمريكي</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="custom-select my-1 mr-sm-2" id="transferType">
+              <option value="1" selected>تحويل بنكي</option>
+              <option value="2">استلام نقدي</option>
+            </select>
+          </div>
+          <div class="form-group">السعر: <span class="font-weight-bold ml-2">1500</span> ريال سعودي</div>
+          <div class="form-row">
+            <button type="submit" name="do" class="btn btn-primary mr-auto col-sm-5">تنفيذ</button>
+            <button type="submit" name"calculate" class="btn btn-light ml-auto col-sm-5 mt-2 mt-sm-0">احسب</button>
+          </div>
+        </form>
       </section>
 
     </main>
