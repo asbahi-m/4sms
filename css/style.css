@@ -1,6 +1,6 @@
 /*
-color1: #78be44 rgba(120, 190, 68, 1)
-color2: #3f2b56 rgba(111, 36, 118, 1)
+color1: #78be44 rgba(120, 190, 68, 1) Hover: #649b3a
+color2: #3f2b56 rgba(111, 36, 118, 1) Hover: #57397a
 color3: #b1b1a5     Color Oil
 color4: #323232     Color Dark
 color5: #eeeeee     Color Light
@@ -22,7 +22,7 @@ a:hover {
     transition: all .3s ease;
 }
 
-/* Text Color Default Style */
+/* Text & Background Color Default Style */
 .text-primary {
     color: #78be44 !important;
 }
@@ -33,7 +33,7 @@ a.text-primary:hover, .btn-link.text-primary:hover {
     color: #3f2b56 !important;
 }
 a.text-secondary:hover, .btn-link.text-secondary:hover {
-    color: #603f86 !important;
+    color: #57397a !important;
 }
 .text-light {
     color: #eee !important;
@@ -46,6 +46,20 @@ a.text-light:hover, .btn-link.text-light:hover {
 }
 a.text-dark:hover, .btn-link.text-dark:hover {
     color: #3f3f3f !important;
+}
+.bg-primary {
+    background: #78be44 !important;
+    color: #fff !important;
+}
+a.bg-primary:hover {
+    background: #649b3a !important;
+}
+.bg-secondary {
+    background: #3f2b56 !important;
+    color: #fff !important;
+}
+a.bg-secondary:hover {
+    background: #57397a !important;
 }
 
 /* Button Default Style */
@@ -264,21 +278,25 @@ section header hr{
     width: 10%;
     border-width: 10px;
     border-color: #78be44;
+    -webkit-transition: width .5s linear;
+    transition: width .5s linear;
 }
-
+section header:hover hr {
+    width: 100%;
+}
 /* Section System-os Style */
 .system-os img {
     max-height: 100px;
 }
 
 /* Section API Style */
-.api {
+.api-box {
     background: radial-gradient(#3f2b56 70%, #000 200%);
     color: #fff;
     padding: 30px 0; 
 }
 @media (min-width: 992px) {
-    .api {
+    .api-box {
         background: url(../images/markting.png) no-repeat 30px center, radial-gradient(#3f2b56 70%, #000 200%);        
         background-size: 40%, auto;
     }
@@ -313,7 +331,12 @@ section header hr{
 .clients {
     background: radial-gradient(rgba(0,0,0,0.7) 100%, rgba(0,0,0,0) 100%), url(../images/parlix.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    -webkit-transition: background-size .5s ease;
+    transition: background-size .5s ease;
+}
+.clients:hover {
+    background-size: 110%;
 }
 .clients img {
     max-height: 93px;
