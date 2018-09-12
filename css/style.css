@@ -134,6 +134,10 @@ form select {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background: #78be44 !important;
+    box-shadow: 0 0 0 0.2rem rgba(120, 190, 68, 0.25) !important;
+}
 
 /* Paragraph & Headings Default Style */
 p {
@@ -387,7 +391,7 @@ footer {
     background: #323232;
     font-size: 14px;
 }
-footer header hr{
+footer header hr, #signup-page header hr{
     width: 20%;
     border-width: 3px;
     border-color: #78be44;
