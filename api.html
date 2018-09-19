@@ -75,7 +75,7 @@
     
     <a id="backToTop" title="Back to top" href="#"><span class="fa fa-angle-up"></span></a>
 
-    <main id="api-page">
+    <main>
 
       <!-- Heading Page -->
       <div class="container-fluid heading">
@@ -93,123 +93,128 @@
         </div>
       </div>
 
-      <section class="api container">
-        <div class="row">
-          <div class="col-lg-9 col-md-7 order-1 order-md-0 my-auto">
-            <h1 class="text-secondary">خدمة الـ API</h1>
-            <article>
-                <h2 class="text-justify mt-4">ما هي خدمة الـ API؟</h2>
-                <p>
-                    هي ملف برمجة يمكنك من استخدام حسابك لديك في الإرسال عن طريقها من موقعك.<br>
-                    مثلاً: موقعك موقع تسوق ترغب في أن تصل لأعضائه رسالة قصيرة بعد عملية الدفع، 
-                    فيمكنك عن طريق الملف البرمجي دمجه مع موقعك بحيث يمكنك استخدام رصيدك لإرسال تلك الرسائل.
-                </p>
-                <h2 class="text-justify mt-4">توضيحات هامة بشأن استخدام الـ API:</h2>
-                <p>
-                    لكي تستطيع استخدام الخدمة يتوجب عليك التسجيل معنا.<br>
-                    بعد الضغط على الرابط السابق سوف تظهر لك صفحة التسجيل، يرجى ادخال البيانات كاملة وتفعيل العضوية.<br>
-                    ليس هناك أي تكلفة إضافية لاستخدام الخدمة، كل ما عليك هو شحن رصيدك والتمتع باستخدامها.<br>
-                    بعد اتمام التسجيل سوف نقوم بعد ذلك بشحن الرصيد لكم وبإمكانكم استخدام اسم المستخدم وكلمة المرور للإرسال من خلال بوابة موقعك.
-                </p>
-            </article>
+      <section class="container">
+        <header class="mb-4">
+          <h1 class="text-center">خدمة الـ API</h1>
+          <hr>
+        </header>
+        <div class="api">
+          <div class="row">
+            <div class="col-lg-9 col-md-7 order-1 order-md-0 my-auto">
+              <article>
+                  <h2 class="text-justify mt-4">ما هي خدمة الـ API؟</h2>
+                  <p>
+                      هي ملف برمجة يمكنك من استخدام حسابك لديك في الإرسال عن طريقها من موقعك.<br>
+                      مثلاً: موقعك موقع تسوق ترغب في أن تصل لأعضائه رسالة قصيرة بعد عملية الدفع، 
+                      فيمكنك عن طريق الملف البرمجي دمجه مع موقعك بحيث يمكنك استخدام رصيدك لإرسال تلك الرسائل.
+                  </p>
+                  <h2 class="text-justify mt-4">توضيحات هامة بشأن استخدام الـ API:</h2>
+                  <p>
+                      لكي تستطيع استخدام الخدمة يتوجب عليك التسجيل معنا.<br>
+                      بعد الضغط على الرابط السابق سوف تظهر لك صفحة التسجيل، يرجى ادخال البيانات كاملة وتفعيل العضوية.<br>
+                      ليس هناك أي تكلفة إضافية لاستخدام الخدمة، كل ما عليك هو شحن رصيدك والتمتع باستخدامها.<br>
+                      بعد اتمام التسجيل سوف نقوم بعد ذلك بشحن الرصيد لكم وبإمكانكم استخدام اسم المستخدم وكلمة المرور للإرسال من خلال بوابة موقعك.
+                  </p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-5 order-0 order-md-1 mb-3 my-md-auto text-center">
+              <img class="img-fluid" src="images/mobile4sms.png" alt="Moblie 4SMS" >
+            </div>
           </div>
-          <div class="col-lg-3 col-md-5 order-0 order-md-1 mb-3 my-md-auto text-center">
-            <img class="img-fluid" src="images/mobile4sms.png" alt="Moblie 4SMS" >
+          <div>
+              <h1 class="text-secondary">كيفية استخدام الـ API؟</h1>
+              <h2 class="text-justify mt-4">رابط الإرسال:</h2>
+              <a href="#" class="bg-primary d-block col-sm-10 col-md-8 col-lg-6 p-3 rounded text-center">http://www.4sms.com</a>
+              <h2 class="text-justify mt-4">قائمة المتغيرات المستخدمة:</h2>
+              <table class="table text-center">
+                  <thead class="bg-primary">
+                      <tr>
+                          <th scope="col">اسم المتغير</th>
+                          <th scope="col">قيمة المتغير</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>user</td>
+                          <td>نقوم بالتعويض عنها باسم المستخدم</td>
+                      </tr>
+                      <tr>
+                          <td>password</td>
+                          <td>نقوم بالتعويض عنها بكلمة المرور</td>
+                      </tr>
+                      <tr>
+                          <td>numbers</td>
+                          <td>نقوم بالتعويض عنها برقم جوال المرسل إليه، يمكنك الإرسال إلى أكثر من رقم وذلك بوضع فاصلة (,) بين الأرقام</td>
+                      </tr>
+                      <tr>
+                          <td>sender</td>
+                          <td>نقوم بالتعويض عنها باسم المرسل</td>
+                      </tr>
+                      <tr>
+                          <td>message</td>
+                          <td>نقوم بالتعويض عنها بالرسالة المراد إرسالها</td>
+                      </tr>
+                      <tr>
+                          <td>lang</td>
+                          <td>نقوم بالتعويض عنها بلغة الرسالة، القيم المتاحة: ar & en</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <h2 class="text-justify mt-4">مجموعة القيم الناتجة من تنفيذ رابط الإرسال، ومعنى كل منها:</h2>
+              <table class="table text-center">
+                  <thead class="bg-primary">
+                      <tr>
+                          <th scope="col">ناتج الإرسال</th>
+                          <th scope="col">ما يعنيه الناتج</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>تم الإرسال بنجاح</td>
+                      </tr>
+                      <tr>
+                          <td>0</td>
+                          <td>خطأ في الإرسال</td>
+                      </tr>
+                      <tr>
+                          <td>Invalid Login</td>
+                          <td>خطأ في بيانات الدخول</td>
+                      </tr>
+                      <tr>
+                          <td>Missing or Empty Field</td>
+                          <td>توجد قيمة خاطئة في إحدى الحقول، أو هناك حقل فارغ</td>
+                      </tr>
+                      <tr>
+                          <td>Insufficent Balance</td>
+                          <td>رصيدك لا يكفي لإتمام عملية الإرسال</td>
+                      </tr>
+                      <tr>
+                          <td>Invalid Sender</td>
+                          <td>خطأ في اسم المرسل، اسم المرسل لابد أن يتكون من حروف إنجليزية وأرقام</td>
+                      </tr>
+                      <tr>
+                          <td>Sender name is not activated</td>
+                          <td>اسم المرسل غير مفعل</td>
+                      </tr>
+                      <tr>
+                          <td>Invalid Message Language</td>
+                          <td>لغة الرسالة مخالفة عن القيمة المذكورة في متغير Lang</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <h2 class="text-justify mt-4">رابط جلب الرصيد:</h2>
+              <p>يمكنك عن طريق الرابط التالي معرفة رصيدك دون الحاجة إلى الدخول إلى الموقع</p>
+              <a href="#" class="bg-primary d-block col-sm-10 col-md-8 col-lg-6 p-3 rounded text-center">http://www.4sms.com</a>
+              <h2 class="text-justify mt-4">ملاحظة:</h2>
+              <p>
+                  تخصم النقاط بناءً على طول الرسالة المرسلة، وفيما يلي بيان لكيفية حساب تكلفة الرسالة:<br>
+                  <span class="text-primary font-weight-bold">الرسالة إنجليزية:</span> إذا كان طول الرسالة 061 حرفاً أو أقل يتم احتسابها بنقطة واحدة، 
+                  أما إذا كان طول الرسالة أكثر من ذلك يتم احتساب كل 351 حرفاً بنقطة.<br>
+                  <span class="text-primary font-weight-bold">الرسالة العربية:</span> إذا كان طول الرسالة 070 حرفاً أو أقل يتم احتسابها بنقطة واحدة، 
+                  أما إذا كان طول الرسالة أكثر من ذلك يتم احتساب كل 76 حرفاً بنقطة.
+              </p>
           </div>
-        </div>
-        <div>
-            <h1 class="text-secondary">كيفية استخدام الـ API؟</h1>
-            <h2 class="text-justify mt-4">رابط الإرسال:</h2>
-            <a href="#" class="bg-primary d-block col-sm-10 col-md-8 col-lg-6 p-3 rounded text-center">http://www.4sms.com</a>
-            <h2 class="text-justify mt-4">قائمة المتغيرات المستخدمة:</h2>
-            <table class="table text-center">
-                <thead class="bg-primary">
-                    <tr>
-                        <th scope="col">اسم المتغير</th>
-                        <th scope="col">قيمة المتغير</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>user</td>
-                        <td>نقوم بالتعويض عنها باسم المستخدم</td>
-                    </tr>
-                    <tr>
-                        <td>password</td>
-                        <td>نقوم بالتعويض عنها بكلمة المرور</td>
-                    </tr>
-                    <tr>
-                        <td>numbers</td>
-                        <td>نقوم بالتعويض عنها برقم جوال المرسل إليه، يمكنك الإرسال إلى أكثر من رقم وذلك بوضع فاصلة (,) بين الأرقام</td>
-                    </tr>
-                    <tr>
-                        <td>sender</td>
-                        <td>نقوم بالتعويض عنها باسم المرسل</td>
-                    </tr>
-                    <tr>
-                        <td>message</td>
-                        <td>نقوم بالتعويض عنها بالرسالة المراد إرسالها</td>
-                    </tr>
-                    <tr>
-                        <td>lang</td>
-                        <td>نقوم بالتعويض عنها بلغة الرسالة، القيم المتاحة: ar & en</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2 class="text-justify mt-4">مجموعة القيم الناتجة من تنفيذ رابط الإرسال، ومعنى كل منها:</h2>
-            <table class="table text-center">
-                <thead class="bg-primary">
-                    <tr>
-                        <th scope="col">ناتج الإرسال</th>
-                        <th scope="col">ما يعنيه الناتج</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>تم الإرسال بنجاح</td>
-                    </tr>
-                    <tr>
-                        <td>0</td>
-                        <td>خطأ في الإرسال</td>
-                    </tr>
-                    <tr>
-                        <td>Invalid Login</td>
-                        <td>خطأ في بيانات الدخول</td>
-                    </tr>
-                    <tr>
-                        <td>Missing or Empty Field</td>
-                        <td>توجد قيمة خاطئة في إحدى الحقول، أو هناك حقل فارغ</td>
-                    </tr>
-                    <tr>
-                        <td>Insufficent Balance</td>
-                        <td>رصيدك لا يكفي لإتمام عملية الإرسال</td>
-                    </tr>
-                    <tr>
-                        <td>Invalid Sender</td>
-                        <td>خطأ في اسم المرسل، اسم المرسل لابد أن يتكون من حروف إنجليزية وأرقام</td>
-                    </tr>
-                    <tr>
-                        <td>Sender name is not activated</td>
-                        <td>اسم المرسل غير مفعل</td>
-                    </tr>
-                    <tr>
-                        <td>Invalid Message Language</td>
-                        <td>لغة الرسالة مخالفة عن القيمة المذكورة في متغير Lang</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2 class="text-justify mt-4">رابط جلب الرصيد:</h2>
-            <p>يمكنك عن طريق الرابط التالي معرفة رصيدك دون الحاجة إلى الدخول إلى الموقع</p>
-            <a href="#" class="bg-primary d-block col-sm-10 col-md-8 col-lg-6 p-3 rounded text-center">http://www.4sms.com</a>
-            <h2 class="text-justify mt-4">ملاحظة:</h2>
-            <p>
-                تخصم النقاط بناءً على طول الرسالة المرسلة، وفيما يلي بيان لكيفية حساب تكلفة الرسالة:<br>
-                <span class="text-primary font-weight-bold">الرسالة إنجليزية:</span> إذا كان طول الرسالة 061 حرفاً أو أقل يتم احتسابها بنقطة واحدة، 
-                أما إذا كان طول الرسالة أكثر من ذلك يتم احتساب كل 351 حرفاً بنقطة.<br>
-                <span class="text-primary font-weight-bold">الرسالة العربية:</span> إذا كان طول الرسالة 070 حرفاً أو أقل يتم احتسابها بنقطة واحدة، 
-                أما إذا كان طول الرسالة أكثر من ذلك يتم احتساب كل 76 حرفاً بنقطة.
-            </p>
         </div>
       </section>
 

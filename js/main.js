@@ -1,4 +1,5 @@
-jQuery('.btn-link').click(function(){
+/* Change Icons Section FAQ */
+jQuery('#accordion .btn-link').click(function(){
     if(jQuery(this).hasClass('collapsed')){
         jQuery(this).find('span').removeClass('fa fa-plus');
         jQuery(this).find('span').addClass('fa fa-minus');
@@ -9,7 +10,23 @@ jQuery('.btn-link').click(function(){
     }
 })
 
-/*Scroll to top when arrow up clicked BEGIN*/
+/* Show & Hide List Control Panel */
+$('#listControlPanel').on('show.bs.collapse', function () {
+    var node = document.getElementsByClassName("column");
+    jQuery(node[0]).removeClass('d-none');
+    jQuery(node[0]).addClass('d-block');
+    jQuery(node[1]).removeClass('col-sm-12');
+    jQuery(node[1]).addClass('col-sm-8');
+})
+$('#listControlPanel').on('hide.bs.collapse', function () {
+    var node = document.getElementsByClassName("column");
+    jQuery(node[0]).removeClass('d-block');
+    jQuery(node[0]).addClass('d-none');
+    jQuery(node[1]).removeClass('col-sm-8');
+    jQuery(node[1]).addClass('col-sm-12');
+})
+
+/* Scroll to top when arrow up clicked BEGIN */
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
@@ -26,4 +43,3 @@ $(document).ready(function() {
     });
 
 });
- /*Scroll to top when arrow up clicked END*/

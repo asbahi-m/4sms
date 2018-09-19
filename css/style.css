@@ -13,6 +13,12 @@ body {
     font-size: 16px;
     font-weight: 300;
 }
+.ltr {
+    direction: ltr;
+}
+.text-small {
+    font-size: small !important;
+}
 a, a:hover, .btn-link:hover, .btn-link:focus {
     text-decoration: none;
 }
@@ -58,7 +64,7 @@ a.bg-primary:hover {
     background: #3f2b56 !important;
     color: #fff !important;
 }
-a.bg-secondary:hover {
+a.bg-secondary:hover, button.bg-secondary:hover, a.bg-secondary:focus, button.bg-secondary:focus {
     background: #57397a !important;
 }
 strong {
@@ -112,6 +118,27 @@ strong {
 }
 .border-secondary {
     border-color: #3f2b56 !important;
+}
+
+/* Border Custom */
+.custom-border-rounded {
+    border: 1px solid #78be44;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 2px;
+    margin-left: 10px;
+}
+.custom-border-rounded .fa {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    color: #fff;
+    margin: auto;
+    background: #3f2b56;
+    border-radius: 50%;
+}
+.custom-border-rounded .fa::before {
+    margin: auto;
 }
 
 /* Form Default Style */
@@ -391,7 +418,7 @@ footer {
     background: #323232;
     font-size: 14px;
 }
-footer header hr, #signup-page header hr{
+footer header hr, hr.custom-small-border {
     width: 20%;
     border-width: 3px;
     border-color: #78be44;
@@ -432,4 +459,131 @@ footer .list-group-item a:hover {
     color: #fff;
 }
 
+/* Control Panel Style */
+#cPanel-page {
+    background: #f5f5f5;
+}
 
+/* List Control Panel Style */
+.list-panel .card {
+    background: unset;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+}
+.list-panel .card-header, .list-panel .card-footer {
+    border-color: #78be44;
+}
+.list-panel .progress {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    margin: auto;
+    background: unset;
+}
+.list-panel .progress .label {
+    font-size:40px;
+    color: #78be44;
+    position: absolute;
+    padding: 10px 0 20px 0;
+}
+.list-panel .progress .label small {
+    font-size: 50%;
+    color: #eee;
+    vertical-align: super;
+}
+.list-panel .progress .half-circle {
+    height: 100%;
+    width: 100%;
+    border: 8px solid #78be44;
+    border-radius: 50%;
+    clip: rect(0, 60px, 120px, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.list-panel .progress .shadow {
+    height: 100%;
+    width: 100%;
+    border: 8px solid #fff;
+    border-radius: 50%;
+}
+.list-panel .progress .left-side {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
+}
+.list-panel .progress .right-side {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.list-panel .nav-item {
+    border-bottom: 1px solid #57397a;
+    background: #1e1526;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.list-panel .nav-item:hover {
+    background:#3f2b56;
+}
+.list-panel .nav-item .nav-link {
+    color: #fff;
+    font-weight: bolder;
+}
+.list-panel .active > .nav-link {
+    background: #57397a;
+}
+.list-panel .nav-link .fa:first-child {
+    width: 50px;
+}
+.list-panel .active .fa-angle-down::before {
+    content: "\f104";
+}
+
+#cPanel-page main {
+    padding: 0 30px;
+}
+#cPanel-page main section header {
+    background: #3f2b56;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+#cPanel-page main section header h1 {
+    margin: 0;
+}
+#cPanel-page main section .content {
+    background: #fff;
+    padding: 15px;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+}
+#cPanel-page #quickLinks .content .item, #cPanel-page #quickLinks .content .item a {
+    color: #fff;
+}
+#cPanel-page #quickLinks .content .item div:first-child {
+    background: #3f2b56;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+
+}
+#cPanel-page #quickLinks .item p, #quickLinks .item h2 {
+    line-height: 30px;
+    margin: 0;
+}
+#cPanel-page #quickLinks .content .item .fa {
+    font-size: 60px;
+    padding-right: 0;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    #cPanel-page #quickLinks .content .item .fa {
+        font-size: 40px !important;
+    }
+}
+@media (min-width: 575.98px) {
+    #cPanel-page #quickLinks .content .item:first-child .fa {
+        font-size: 100px;
+    }
+}

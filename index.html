@@ -44,8 +44,7 @@
           <ul class="navbar-nav mr-auto mt-5">
             <li class="nav-item active"><a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#">تعرف علينا</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">خدمات</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">API</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">خدمات API</a></li>
             <li class="nav-item"><a class="nav-link" href="#">أسعار الباقات</a></li>
             <li class="nav-item"><a class="nav-link" href="#">تذاكر الدعم الفني</a></li>
             <li class="nav-item"><a class="nav-link" href="#">طرق الدفع</a></li>
@@ -77,7 +76,8 @@
 
     <main>
 
-      <section class="slider container-fluid"> <!-- Start Slider -->
+      <!-- Slider Section -->
+      <section class="slider container-fluid">
         <div id="carouseIndicators" class="carousel slide" data-ride="carousel">
           <!-- Radio  Buttons Slider -->
           <ol class="carousel-indicators">
@@ -137,12 +137,16 @@
             </div>
           </div>
         </div>
-      </section> <!-- End Slider -->
+      </section>
 
-      <section class="about-us container">
-        <div class="row">
+      <!-- About Us Section -->
+      <section class="container">
+        <header class="mb-4">
+          <h1 class="text-center">تعرف علينا</h1>
+          <hr>
+        </header>
+        <div class="row about-us">
           <div class="col-lg-9 col-md-7 order-1 order-md-0 my-auto">
-              <h1>تعرف علينا</h1>
               <article>
                 <h2 class="text-justify">ما هي الخدمة المميزة التي يقدمها موقعنا لرسائل الجوال؟</h2>
                 <p>
@@ -154,8 +158,7 @@
                     عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو ...
                 </p>
               </article>
-              <a class="btn btn-primary mr-2" role="button">اشترك الآن</a>
-              <a class="btn btn-light ml-2" role="button">تعرف على المزيد</a>
+              <a class="btn btn-primary mr-2" role="button">اشترك الآن</a><a class="btn btn-light ml-2" role="button">تعرف على المزيد</a>
           </div>
           <div class="col-lg-3 col-md-5 order-0 order-md-1 mb-3 my-md-auto text-center">
             <img class="img-fluid" src="images/mobile4sms.png" alt="Moblie 4SMS" >
@@ -163,12 +166,13 @@
         </div>
       </section>
 
-      <section class="system-os container">
+      <!-- System OS Section -->
+      <section class="container">
         <header class="mb-4">
           <h1 class="text-center">أنظمة 4sms متوافقة مع</h1>
           <hr>
         </header>
-        <div class="row">
+        <div class="row system-os">
           <div class="col-lg-3 col-md-6 text-center my-4">
             <img class="img-fluid mb-3" src="images/wepicon.png" alt="WEP">
             <h1 class="text-primary">WEP</h1>
@@ -200,6 +204,7 @@
         </div>
       </section>
 
+      <!-- API BOX Section -->
       <section class="api-box container-fluid">
         <div class="container">
           <div class="row">
@@ -216,12 +221,13 @@
         </div>
       </section>
 
-      <section class="faq container">
+      <!-- FAQ Section -->
+      <section class="container">
         <header class="mb-4">
           <h1 class="text-center">سؤال وإجابة</h1>
           <hr>
         </header>
-        <div id="accordion">
+        <div id="accordion" class="faq">
           <!-- Question 1 -->
           <div class="card">
             <div class="card-header" id="heading_1">
@@ -323,12 +329,13 @@
         </div>
       </section>
 
-      <section class="packages container">
+      <!-- Packages Section -->
+      <section class="container">
         <header class="mb-4">
           <h1 class="text-center">الباقات في 4sms</h1>
           <hr>
         </header>
-        <div class="row">
+        <div class="row packages">
           <!-- Package 1 -->
           <div class="col-lg-4 text-center mt-4 px-5">
             <div class="package">
