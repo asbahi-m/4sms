@@ -539,6 +539,7 @@ footer .list-group-item a:hover {
     content: "\f104";
 }
 
+/* All Sections Style In Control Panel */
 #cPanel-page main {
     padding: 0 30px;
 }
@@ -557,33 +558,39 @@ footer .list-group-item a:hover {
     margin: 0;
     border-radius: 0 0 5px 5px;
 }
-#cPanel-page #quickLinks .content .item, #cPanel-page #quickLinks .content .item a {
+
+/* Welcome Page Style */
+#cPanel-page #quickLinks .item, #cPanel-page #quickLinks .item a {
     color: #fff;
 }
-#cPanel-page #quickLinks .content .item div:first-child {
+#cPanel-page #quickLinks .item div:first-child {
     background: #3f2b56;
     padding: 10px;
     margin: 15px 0;
     border-radius: 5px;
-
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+#cPanel-page #quickLinks .item:hover div:first-child {
+    background: #78be44;
 }
 #cPanel-page #quickLinks .item p, #quickLinks .item h2 {
     line-height: 30px;
     margin: 0;
 }
-#cPanel-page #quickLinks .content .item .fa {
+#cPanel-page #quickLinks .item .fa {
     font-size: 60px;
     padding-right: 0;
     text-align: center;
 }
 
 @media (max-width: 400px) {
-    #cPanel-page #quickLinks .content .item .fa {
+    #cPanel-page #quickLinks .item .fa {
         font-size: 40px !important;
     }
 }
 @media (min-width: 575.98px) {
-    #cPanel-page #quickLinks .content .item:first-child .fa {
+    #cPanel-page #quickLinks .item:first-child .fa {
         font-size: 100px;
     }
 }
