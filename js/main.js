@@ -1,12 +1,12 @@
 /* Change Icons Section FAQ */
 jQuery('#accordion .btn-link').click(function(){
     if(jQuery(this).hasClass('collapsed')){
-        jQuery(this).find('span').removeClass('fa fa-plus');
-        jQuery(this).find('span').addClass('fa fa-minus');
+        jQuery(this).find('.fa').removeClass('fa-plus');
+        jQuery(this).find('.fa').addClass('fa-minus');
     }
     else{
-        jQuery(this).find('span').removeClass('fa fa-minus');
-        jQuery(this).find('span').addClass('fa fa-plus');
+        jQuery(this).find('.fa').removeClass('fa-minus');
+        jQuery(this).find('.fa').addClass('fa-plus');
     }
 })
 

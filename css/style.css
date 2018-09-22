@@ -59,14 +59,14 @@ a.text-light:hover, .btn-link.text-light:hover {
 a.text-dark:hover, .btn-link.text-dark:hover {
     color: #3f3f3f !important;
 }
-.bg-primary {
+.bg-primary, .badge-primary {
     background: #78be44 !important;
     color: #fff !important;
 }
 a.bg-primary:hover {
     background: #649b3a !important;
 }
-.bg-secondary {
+.bg-secondary, .badge-secondary {
     background: #3f2b56 !important;
     color: #fff !important;
 }
@@ -163,8 +163,22 @@ form select, select.custom-select {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+.custom-control-label::before {
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+}
+.custom-control-label::after {
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, 
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
     background: #78be44 !important;
+    box-shadow: 0 0 0 0.2rem rgba(120, 190, 68, 0.25) !important;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(120, 190, 68, 0.25) !important;
 }
 
@@ -316,14 +330,14 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-section header hr{
+section header hr {
     width: 10%;
     border-width: 10px;
     border-color: #78be44;
     -webkit-transition: width .5s linear;
     transition: width .5s linear;
 }
-section:hover header hr {
+section:hover header hr:not(.custom-small-border) {
     width: 100%;
 }
 /* Section System-os Style */
@@ -345,18 +359,18 @@ section:hover header hr {
 }
 
 /* Section faq Style */
-.faq .card {
+#accordion .card {
     border: 0;
     border-bottom: 1px solid #78be44;
 }
-.faq .card-header {
+#accordion .card-header {
     border: 0;
 }
-.faq .btn {
+#accordion .btn {
     white-space: normal;
     text-align: right;
 }
-.faq button .fa {
+.faq .btn .fa {
     font-size: 24px;
     color: #78be44;
     margin-left: 15px;
@@ -426,7 +440,6 @@ footer header hr, hr.custom-small-border {
     border-color: #78be44;
     margin: 0;
 }
-
 footer .list-group-item {
     background: none;
     border: 0;
@@ -545,7 +558,7 @@ footer .list-group-item a:hover {
 #cPanel-page main {
     padding: 0 30px;
 }
-#cPanel-page main section header {
+#cPanel-page main section > header {
     background: #3f2b56;
     color: #fff;
     padding: 15px;
@@ -556,12 +569,15 @@ footer .list-group-item a:hover {
 }
 #cPanel-page main section .content {
     background: #fff;
-    padding: 15px;
+    padding: 30px;
     margin: 0;
     border-radius: 0 0 5px 5px;
 }
 
 /* Welcome Page Style */
+#cPanel-page #quickLinks {
+    padding: 15px;
+}
 #cPanel-page #quickLinks .item, #cPanel-page #quickLinks .item a {
     color: #fff;
 }
@@ -597,7 +613,32 @@ footer .list-group-item a:hover {
     }
 }
 
-#cPanel-page .scroll {
+#cPanel-page #smsSend .scroll {
     height: 100px;
     overflow: auto;
+    
+}
+#cPanel-page #smsSend .scroll .custom-checkbox label {
+    padding: 0 5px;
+    border-radius: 5px;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+#cPanel-page #smsSend .scroll .custom-checkbox:hover label {
+    background: rgba(120, 190, 68, 0.2);
+}
+#cPanel-page #smsFavorite #accordion .fa {
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
+}
+#cPanel-page #smsFavorite #accordion .card-body {
+    border: 1px #eee solid;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: #323232;
 }
