@@ -20,7 +20,7 @@ body {
     font-size: small !important;
 }
 .text-large {
-    font-size: large;
+    font-size: larger;
 }
 .text-xx-large {
     font-size: xx-large;
@@ -574,25 +574,24 @@ footer .list-group-item a:hover {
     border-radius: 0 0 5px 5px;
 }
 
-/* Welcome Page Style */
+/* Welcome Panel Style */
 #cPanel-page #quickLinks {
     padding: 15px;
 }
-#cPanel-page #quickLinks .item, #cPanel-page #quickLinks .item a {
-    color: #fff;
-}
-#cPanel-page #quickLinks .item div:first-child {
+#cPanel-page #quickLinks .item a {
     background: #3f2b56;
+    display: block;
     padding: 10px;
     margin: 15px 0;
     border-radius: 5px;
     -webkit-transition: background .3s ease;
     transition: background .3s ease;
+    color: #fff;
 }
-#cPanel-page #quickLinks .item:hover div:first-child {
+#cPanel-page #quickLinks .item a:hover {
     background: #78be44;
 }
-#cPanel-page #quickLinks .item p, #quickLinks .item h2 {
+#cPanel-page #quickLinks .item p {
     line-height: 30px;
     margin: 0;
 }
@@ -600,8 +599,8 @@ footer .list-group-item a:hover {
     font-size: 60px;
     padding-right: 0;
     text-align: center;
+    width: 40%;
 }
-
 @media (max-width: 400px) {
     #cPanel-page #quickLinks .item .fa {
         font-size: 40px !important;
@@ -613,10 +612,10 @@ footer .list-group-item a:hover {
     }
 }
 
+/* Send SMS Panel Style */
 #cPanel-page #smsSend .scroll {
     height: 100px;
     overflow: auto;
-    
 }
 #cPanel-page #smsSend .scroll .custom-checkbox label {
     padding: 0 5px;
@@ -627,6 +626,8 @@ footer .list-group-item a:hover {
 #cPanel-page #smsSend .scroll .custom-checkbox:hover label {
     background: rgba(120, 190, 68, 0.2);
 }
+
+/* Favorite SMS Panel Style */
 #cPanel-page #smsFavorite #accordion .fa {
     height: 20px;
     width: 20px;
