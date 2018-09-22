@@ -19,6 +19,12 @@ body {
 .text-small {
     font-size: small !important;
 }
+.text-large {
+    font-size: large;
+}
+.text-xx-large {
+    font-size: xx-large;
+}
 a, a:hover, .btn-link:hover, .btn-link:focus {
     text-decoration: none;
 }
@@ -142,10 +148,6 @@ strong {
 }
 
 /* Form Default Style */
-form {
-    color: #78be44 !important;
-}
-
 .form-control {
     color: #3f2b56 !important;
 }
@@ -157,7 +159,7 @@ form {
     box-shadow: 0 0 0 0.2rem rgba(120, 190, 68, 0.25) !important;
     border-color: #78be44;
 }
-form select {
+form select, select.custom-select {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -593,4 +595,9 @@ footer .list-group-item a:hover {
     #cPanel-page #quickLinks .item:first-child .fa {
         font-size: 100px;
     }
+}
+
+#cPanel-page .scroll {
+    height: 100px;
+    overflow: auto;
 }
