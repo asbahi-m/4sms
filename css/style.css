@@ -33,6 +33,13 @@ a:hover:not(a .active) {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
+.custom-small-border {
+    width: 100px;
+    border-width: 3px;
+    border-color: #78be44;
+    margin: 0;
+    margin-bottom: 10px;
+}
 
 /* Text & Background Color Default Style */
 .text-primary, .page-item .page-link {
@@ -183,6 +190,11 @@ form select, select.custom-select {
 }
 .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(120, 190, 68, 0.25) !important;
+}
+.custom-file-label::after {
+    content: "\f0ee";
+    font-family: "fontawesome";
+    font-size: 20px;
 }
 
 /* Paragraph & Headings Default Style */
@@ -436,12 +448,6 @@ main .heading .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
 footer {
     background: #323232;
     font-size: 14px;
-}
-footer header hr, hr.custom-small-border {
-    width: 20%;
-    border-width: 3px;
-    border-color: #78be44;
-    margin: 0;
 }
 footer .list-group-item {
     background: none;
