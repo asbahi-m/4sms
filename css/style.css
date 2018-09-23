@@ -28,14 +28,14 @@ body {
 a, a:hover, .btn-link:hover, .btn-link:focus {
     text-decoration: none;
 }
-a:hover {
+a:hover:not(a .active) {
     opacity: 0.8;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
 
 /* Text & Background Color Default Style */
-.text-primary {
+.text-primary, .page-item .page-link {
     color: #78be44 !important;
 }
 a.text-primary:hover, .btn-link.text-primary:hover {
@@ -59,7 +59,10 @@ a.text-light:hover, .btn-link.text-light:hover {
 a.text-dark:hover, .btn-link.text-dark:hover {
     color: #3f3f3f !important;
 }
-.bg-primary, .badge-primary {
+.page-item.disabled .page-link {
+    color: #6c757d !important;
+}
+.bg-primary, .badge-primary, .page-item.active .page-link {
     background: #78be44 !important;
     color: #fff !important;
 }
@@ -113,13 +116,13 @@ strong {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.btn-primary:focus {
+.btn-primary:focus, .page-link:focus {
     box-shadow: 0 0 0 0.2rem rgba(120, 190, 68, 0.5) !important;
 }
 .btn-secondary:focus {
     box-shadow: 0 0 0 0.2rem rgba(111, 36, 118, 0.5) !important;
 }
-.border-primary {
+.border-primary, .page-item.active .page-link {
     border-color: #78be44 !important;
 }
 .border-secondary {
@@ -628,7 +631,7 @@ footer .list-group-item a:hover {
 }
 
 /* Favorite SMS Panel Style */
-#cPanel-page #smsFavorite #accordion .fa {
+#cPanel-page #accordion .fa {
     height: 20px;
     width: 20px;
     font-size: 16px;
@@ -637,9 +640,27 @@ footer .list-group-item a:hover {
     border-radius: 5px;
     padding: 2px;
 }
-#cPanel-page #smsFavorite #accordion .card-body {
-    border: 1px #eee solid;
-    border-radius: 10px;
+#cPanel-page #accordion .card-body {
     margin: 10px auto;
     color: #323232;
+}
+
+/* Archive SMS Panel Styel */
+#cPanel-page #smsArchive .head .btn:not(input) {
+    color: #3f2b56 !important;
+    border-color: #3f2b56 !important;
+}
+#cPanel-page #smsArchive .head #searchBtn.active {
+    color: #fff !important;
+    background: #3f2b56 !important;
+}
+#cPanel-page #smsArchive .head #searchBox {
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 15px;
+}
+#cPanel-page #smsArchive .info {
+    background: #eee;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
 }

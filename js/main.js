@@ -26,6 +26,17 @@ $('#listControlPanel').on('hide.bs.collapse', function () {
     jQuery(node[1]).addClass('col-sm-12');
 })
 
+/* Show & Hide Search Box In Control Panel */
+$('#searchBox').on('show.bs.collapse', function () {
+    var node = document.getElementById("searchBtn");
+    jQuery(node).addClass('active');
+})
+$('#searchBox').on('hide.bs.collapse', function () {
+    var node = document.getElementById("searchBtn");
+    jQuery(node).removeClass('active');
+
+})
+
 /* Scroll to top when arrow up clicked BEGIN */
 $(window).scroll(function() {
     var height = $(window).scrollTop();
