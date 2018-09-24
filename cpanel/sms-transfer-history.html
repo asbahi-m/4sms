@@ -187,47 +187,80 @@
             <!-- Control Panel Content -->
             <main class="column col-sm-12 col-md-9 col-lg-10 col-xl-8">
                 <section>
-                    <header><h1><span class="fa fa-battery-three-quarters mr-3 text-primary"></span>تحويل رصيد</h1></header>
-                    
-                    <div class="content" id="smsTransfer">
-                        <a href="" class="btn btn-light px-5 mb-3 col-sm-6 offset-sm-6">سجلات تحويل الرصيد</a>
+                    <header><h1><span class="fa fa-battery-three-quarters mr-3 text-primary"></span>سجلات تحويل الرصيد</h1></header>
 
-                        <div class="alert alert-info d-sm-flex align-items-center">
-                            <span class="fa fa-info-circle col-sm-1 my-auto pl-sm-0 text-xx-large text-center"></span>
-                            <span class="col-sm-11 d-block text-justify p-0">تعليمات: برجاء إدخال اسم العضو أو رقم جواله أو بريده الإلكتروني لكي يتم التحويل بنجاح.</span>
-                        </div>
+                    <div class="content" id="smsTransferHistory">
+                        <a href="" class="btn btn-primary px-5 mb-3 float-sm-right d-block">تحويل رصيد</a>
 
-                        <form>
-                            <div class="form-group row">
-                                <label for="memberName" class="col-sm-4 col-lg-2 col-form-label">اسم العضو:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <input id="memberName" class="form-control" type="text" name="memberName" value="" required>
-                                </div>
-                            </div>
+                        <header>
+                            <h3>أرشيف تحويل الرصيد منك</h3>
+                            <hr class="custom-small-border">
+                        </header>
 
-                            <div class="form-group row">
-                                <label for="memberPhone" class="col-sm-4 col-lg-2 col-form-label">رقم جواله:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <input id="memberPhone" class="form-control" type="tel" name="memberPhone" value="" required>
-                                    <small class="text-muted">أدخل الرقم بدون 00، مثال: 966123456789</small>
-                                </div>
-                            </div>
+                        <table class="table text-center">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">إلى العضو</th>
+                                    <th scope="col">الكمية</th>
+                                    <th scope="col">التاريخ</th>
+                                </tr>
+                            </thead>
 
-                            <div class="form-group row">
-                                <label for="memberEmail" class="col-sm-4 col-lg-2 col-form-label">بريده الإلكتروني:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <input id="memberEmail" class="form-control" type="email" name="memberEmail" value="" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label for="balance" class="col-sm-4 col-lg-2 col-form-label">الرصيد المراد تحويله:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <input id="balance" class="form-control" type="number" name="balance" value="" required>
-                                </div>
-                            </div>
-                            <input class="btn btn-primary px-5" type="submit" name="transfer" value="تحويل">
-                        </form>
+                            <tbody>
+                                <tr>
+                                    <td>حمدان</td>
+                                    <td>10000</td>
+                                    <td>16-02-2018 10:50:00</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>حمدان</td>
+                                    <td>10000</td>
+                                    <td>16-02-2018 10:50:00</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>حمدان</td>
+                                    <td>10000</td>
+                                    <td>16-02-2018 10:50:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <header>
+                            <h3>أرشيف تحويل الرصيد إليك</h3>
+                            <hr class="custom-small-border">
+                        </header>
+
+                        <table class="table text-center">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">من العضو</th>
+                                    <th scope="col">الكمية</th>
+                                    <th scope="col">التاريخ</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>حمدان</td>
+                                    <td>10000</td>
+                                    <td>16-02-2018 10:50:00</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>حمدان</td>
+                                    <td>10000</td>
+                                    <td>16-02-2018 10:50:00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>حمدان</td>
+                                    <td>10000</td>
+                                    <td>16-02-2018 10:50:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
             </main>
