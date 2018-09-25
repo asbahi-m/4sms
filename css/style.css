@@ -20,7 +20,7 @@ body {
     font-size: small !important;
 }
 .text-large {
-    font-size: larger;
+    font-size: 20px;
 }
 .text-xx-large {
     font-size: xx-large;
@@ -28,10 +28,13 @@ body {
 a, a:hover, .btn-link:hover, .btn-link:focus {
     text-decoration: none;
 }
-a:hover:not(a .active) {
+a:hover {
     opacity: 0.8;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+}
+.active:hover, .active a:hover {
+    opacity: 1;
 }
 .custom-small-border {
     width: 100px;
@@ -45,25 +48,25 @@ a:hover:not(a .active) {
 .text-primary, .page-item .page-link {
     color: #78be44 !important;
 }
-a.text-primary:hover, .btn-link.text-primary:hover {
+a.text-primary:hover, .btn-link.text-primary:hover, a.text-primary:focus {
     color: #649b3a !important;
 }
 .text-secondary {
     color: #3f2b56 !important;
 }
-a.text-secondary:hover, .btn-link.text-secondary:hover {
+a.text-secondary:hover, .btn-link.text-secondary:hover, a.text-sechndary:focus {
     color: #57397a !important;
 }
 .text-light {
     color: #eee !important;
 }
-a.text-light:hover, .btn-link.text-light:hover {
+a.text-light:hover, .btn-link.text-light:hover, a.text-light:focus {
     color: #dbdbdb !important;
 }
 .text-dark {
     color: #323232 !important;
 }
-a.text-dark:hover, .btn-link.text-dark:hover {
+a.text-dark:hover, .btn-link.text-dark:hover, a.text-dak:focus {
     color: #3f3f3f !important;
 }
 .page-item.disabled .page-link {
@@ -176,12 +179,10 @@ form select, select.custom-select {
 .custom-control-label::before {
     width: 20px;
     height: 20px;
-    margin-top: -2px;
 }
 .custom-control-label::after {
     width: 20px;
     height: 20px;
-    margin-top: -2px;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
@@ -669,4 +670,12 @@ footer .list-group-item a:hover {
     background: #eee;
     border-radius: 10px 10px 0 0;
     padding: 5px;
+}
+
+/* Groups Grid SMS Panel Styel */
+#cPanel-page #smsGroupsGrid a.fa:hover {
+    color: #3f2b56 !important;
+}
+#cPanel-page #smsGroupsGrid .fa {
+    font-size: 20px;
 }
