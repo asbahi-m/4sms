@@ -28,7 +28,7 @@ body {
 a, a:hover, .btn-link:hover, .btn-link:focus {
     text-decoration: none;
 }
-a:hover {
+a:hover:not(.btn) {
     opacity: 0.8;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
@@ -678,4 +678,49 @@ footer .list-group-item a:hover {
 }
 #cPanel-page #smsGroupsGrid .fa {
     font-size: 20px;
+}
+
+/* Ready Messages SMS Panel Styel */
+#cPanel-page #smsReadyMsgs .item {
+    border: 1px solid #78be44;
+    border-radius: 20px;
+    padding: 10px;
+    color: #3f3f3f;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 5px;
+}
+#cPanel-page #smsReadyMsgs a.item {
+    width: 150px;
+    height: 140px;   
+    margin: 10px 10px;
+}
+#cPanel-page #smsReadyMsgs a.item:hover {
+    opacity: 1;
+    background: #eee;
+}
+
+/* Rating Style */
+.rated {
+    color: #ccc;
+}
+.rating label {
+    cursor: pointer;
+    color: #ccc;
+}
+.rating input {
+    display: none;
+}
+.rated .checked, 
+.rated > .checked ~ .fa, 
+.rating:not(:checked) > label:hover, 
+.rating > input:checked ~ label:hover ~ label, 
+.rating:not(:checked) > label:hover ~ label {
+    color: #3f2b56;
+}
+.rating > input:checked + label:hover, 
+.rating > input:checked ~ label, 
+.rating > label:hover ~ input:checked ~ label
+{ 
+    color: #78be44;
 }
