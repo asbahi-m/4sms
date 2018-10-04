@@ -54,3 +54,19 @@ $(document).ready(function() {
     });
 
 });
+
+/* Calculate Progress Bar */
+document.body.onload = function progress() {
+    var ration = parseInt(document.getElementById("ration").innerText);
+    var deg = "rotate(" + (ration * 3.6) + "deg)";
+    var defaultDeg = "rotate(180deg)";
+    if (ration > 50) {
+        document.getElementById("right-side").setAttribute("style","transform: " + defaultDeg + ";");
+        document.getElementById("pie").setAttribute("style","animation: progress 1s step-start; opacity: 1;");
+        document.getElementById("left-side").setAttribute("style","animation: progress 1s step-end; transform: " + deg + "; opacity: 1;");
+    } else {
+        document.getElementById("pie").setAttribute("style","animation: progress 1s step-start; opacity: 1; clip: rect(0, 120px, 120px, 60px);");
+        document.getElementById("right-side").setAttribute("style","transform: " + deg + ";");
+        document.getElementById("left-side").setAttribute("style","display: none;");
+    }
+}
