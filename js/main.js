@@ -70,3 +70,33 @@ document.body.onload = function progress() {
         document.getElementById("left-side").setAttribute("style","display: none;");
     }
 }
+
+jQuery('#packagesSlider').ready(function items(){
+    var screen = window.matchMedia("(min-width: 992px)");
+    var totalItems = $("#packagesSlider .carousel-item").length;
+    if (totalItems <= 3 && screen.matches) {
+        $('#packagesSlider, #packagesSlider > div, #packagesSlider > div > div').removeClass('carousel slide carousel-inner carousel-item');
+        $('#packagesSlider > .carousel-control-prev, #packagesSlider > .carousel-control-next').remove();
+    }
+});
+$("#packagesSlider").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $("#packagesSlider .carousel-item").length;
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $("#packagesSlider .carousel-item")
+            .eq(i)
+            .appendTo("#packagesSlider .carousel-inner");
+        } else {
+          $("#packagesSlider .carousel-item")
+            .eq(0)
+            .appendTo("#packagesSlider .carousel-inner");
+        }
+      }
+    }
+});

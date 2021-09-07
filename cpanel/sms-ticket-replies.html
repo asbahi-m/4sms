@@ -187,55 +187,68 @@
             <!-- Control Panel Content -->
             <main class="column col-sm-12 col-md-9 col-lg-10 col-xl-8">
                 <section>
-                    <header><h1><span class="fa fa-address-book mr-3 text-primary"></span>إضافة تذكرة للدعم الفني</h1></header>
+                    <header><h1><span class="fa fa-address-book mr-3 text-primary"></span>متابعة تذكرة</h1></header>
 
-                    <div class="content" id="smsTicketCreate">
+                    <div class="content" id="smsTicket">
+                        <header>
+                            <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                <h3>عنوان التذكرة: <span class="text-primary">تجربة إنشاء تذكرة</span></h3>
+                                <div class="small mb-3 font-weight-bold text-muted">تم إضافتها في 2018-10-12 02:48:10</div>
+                            </div>
+                            <hr class="custom-small-border">
+                        </header>
+
+                        <form class="form-inline mt-3">
+                            <div class="form-group mr-3">
+                                <label for="status">الحالة:</label>
+                                <select id="status" class="custom-select ml-2" style="width: auto" name="status">
+                                    <option value="1">لم تحل</option>
+                                    <option value="2">تم حل المشكلة</option>
+                                    <option value="3">الغاء التذكرة</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mr-3">
+                                <label for="priority">الأولوية:</label>
+                                <select id="priority" class="custom-select ml-2" style="width: auto" name="priority">
+                                    <option value="1">عادي</option>
+                                    <option value="2">هام</option>
+                                    <option value="3">هام جداً</option>
+                                </select>
+                            </div>
+                            
+                            <input class="btn btn-primary px-5" type="submit" name="update" value="تعديل">
+                        </form>
+                        
+                        <div class="my-3"><strong>تفاصيل التذكرة: </strong>المحتوى التفصيلي للتذكرة.</div>
+                        <div class="my-3"><strong>ملف: </strong><a class="text-secondary" href="#">تحميل</a></div>
+                        <hr>
+
+                        <header>
+                            <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                <h3>رد بواسطة: <span class="text-muted">الدعم الفني</span></h3>
+                                <div class="small mb-3 font-weight-bold text-muted">تم إضافتها في 2018-10-12 02:48:10</div>
+                            </div>
+                            <hr class="custom-small-border">
+                        </header>
+                        <div class="my-3">تم حل المشكلة، شكراً لتواصلكم معنا.</div>
+                        <hr>
+
                         <form>
-                            <div class="form-group row">
-                                <label for="ticketTitle" class="col-sm-4 col-lg-2 col-form-label">عنوان التذكرة:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <input id="ticketTitle" class="form-control" type="text" name="ticketTitle" value="" required>
-                                </div>
+                            <div class="form-group">
+                                <label for="details" class="font-weight-bold">إضافة رد:</label>
+                                <textarea id="details" class="form-control" name="details" required></textarea>
                             </div>
 
                             <div class="form-group row">
-                                <label for="ticketType" class="col-sm-4 col-lg-2 col-form-label">نوع التذكرة:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <select id="ticketType" class="custom-select" name="ticketType">
-                                        <option value="1">استفسار</option>
-                                        <option value="2">شكوى</option>
-                                        <option value="3">ملاحظة</option>
-                                    </select>
-                                </div>                                
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label for="priority" class="col-sm-4 col-lg-2 col-form-label">الأولوية:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <select id="priority" class="custom-select" name="priority">
-                                        <option value="1">عادي</option>
-                                        <option value="2">هام</option>
-                                        <option value="3">هام جداً</option>
-                                    </select>
-                                </div>                                
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label for="details" class="col-sm-4 col-lg-2 col-form-label">تفاصيل التذكرة:</label>
-                                <div class="col-sm-8 col-md-6">
-                                    <textarea id="details" class="form-control" name="details" required></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="addFile" class="col-sm-4 col-lg-2 col-form-label">إرسال ملف:</label>
+                                <label for="addFile" class="col-sm-4 col-lg-2 col-form-label font-weight-bold">إرسال ملف:</label>
                                 <div class="custom-file col-sm-8 col-md-6">
                                     <input id="addFile" class="custom-file-input" type="file" name="addFile">
                                     <span for="addFile" class="custom-file-label mx-3">اختر ملفاً</span>
                                 </div>
                             </div>
 
-                            <input class="btn btn-primary px-5" type="submit" name="create" value="إضافة تذكرة">
+                            <input class="btn btn-primary px-5" type="submit" name="create" value="أضف رداً">
                         </form>
                     </div>
                 </section>
