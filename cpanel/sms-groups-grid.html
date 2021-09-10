@@ -1,53 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="ar">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>4sms alwayz Connect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>4sms alwayz Connect | Control Panel</title>
         <meta name="description" content="4sms alwayz Connect">
+        <link rel="icon" sizes="16x16 24x24 32x32 64x64" type="image/x-icon" href="../images/favicon.png">
+
+        <!-- CSS Files -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- Bootstrap CSS Minimum v4.0 RLT -->
-        <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/style.css">
         <!-- <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"> -->
         <!--[if lt IE 9]>
             <script src="/js/html5shiv.min.js"></script>
         <![endif]-->
     </head>
-    <body id="cPanel-page" class="container-fluid">
 
+    <body id="cPanel-page" class="container-fluid">
         <!-- Start of Header: Logo & Navbar Top -->
         <header class="row bg-white">
-            <div class="col-8 col-sm-4 col-lg-2 my-auto">
-                <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="Logo 4SMS" class="img-fluid"></a>
+            <div class="col-auto col-sm-4 col-lg-2 my-auto">
+                <a class="navbar-brand" href="index.html"><img src="../images/logo.png" alt="Logo 4SMS" class="img-fluid"></a>
             </div>
-            <div class="col-4 col-sm-8 col-lg-10 col-xl-8 mt-auto my-sm-auto">
+            <div class="col-auto col-sm-8 col-lg-10 col-xl-8 my-auto py-3">
                 <nav class="nav font-weight-bold">
                     <!-- Icon Navbar Collapse -->
                     <button class="navbar-toggler bg-secondary d-block d-md-none ml-auto ml-sm-0 mr-sm-auto my-auto" type="button" data-toggle="collapse" data-target="#listControlPanel" aria-controls="listControlPanel" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fa fa-bars"></span>
                     </button>
                     <!-- Navbar Top -->
-                    <div class="nav-link d-none d-md-block">
-                        <div class="custom-border-rounded"><span class="fa fa-home"></span></div>
-                        <a href="#" class="text-secondary d-inline-block">الرئيسية</a>
+                    <div class="nav-link p-0 px-2">
+                        <a href="../index.html" class="text-secondary">
+                            <span class="custom-border-rounded"><i class="fa fa-home"></i></span>
+                            <span>الرئيسية</span>
+                        </a>
                     </div>
-                    <div class="nav-link d-none d-lg-block">
-                        <div class="custom-border-rounded"><span class="fa fa-envelope-open"></span></div>
-                        <a href="#" class="text-secondary d-inline-evanlope">info@4sms.ws</a>
+                    <div class="nav-link p-0 px-2 d-none d-md-block">
+                        <a href="#" class="text-secondary">
+                            <span class="custom-border-rounded"><i class="fa fa-envelope-open"></i></span>
+                            <span>info@4sms.ws</span>
+                        </a>
                     </div>
-                    <div class="nav-link d-none d-lg-block">
-                        <div class="custom-border-rounded"><span class="fa fa-volume-control-phone"></span></div>
-                        <span class="text-secondary d-inline-block ltr">00966 123 456 789</span>
+                    <div class="nav-link p-0 px-2 d-none d-lg-block">
+                        <a href="#" class="text-secondary">
+                            <span class="custom-border-rounded"><i class="fa fa-volume-control-phone"></i></span>
+                            <span>00966 123 456 789</span>
+                        </a>
                     </div>
-                    <div class="nav-link d-none d-sm-block ml-auto">
-                        <div class="custom-border-rounded"><span class="fa fa-user"></span></div>
-                        <a href="#" class="text-secondary d-inline-block">Walid Hindam</a>
+                    <div class="nav-link p-0 px-2 d-none d-lg-block ml-auto">
+                        <a href="sms-profile.html" class="text-secondary">
+                            <span class="custom-border-rounded"><i class="fa fa-user"></i></span>
+                            <span>Walid Hindam</span>
+                        </a>
                     </div>
-                    <span class="border border-primary d-none d-sm-block"></span>
-                    <div class="nav-link d-none d-sm-block">
-                        <div class="custom-border-rounded"><span class="fa fa-language"></span></div>
-                        <a href="#" class="text-secondary d-inline-block">العربية</a>
+                    <span class="border border-primary d-none d-lg-block"></span>
+                    <div class="nav-link p-0 px-2 ml-md-auto ml-lg-0">
+                        <a href="#" class="text-secondary">
+                            <span class="custom-border-rounded"><i class="fa fa-language"></i></span>
+                            <span>العربية</span>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -55,10 +70,9 @@
 
         <!-- Start of Control Panel -->
         <div class="row">
-
             <!-- Control Panel List -->
             <div class="column col-sm-4 col-md-3 col-lg-2 list-panel p-0 d-none d-md-block">
-                <nav class="navbar navbar-expand-md navbar-dark p-0 bg-secondary">
+                <nav class="navbar navbar-expand-md navbar-dark p-0 bg-secondary sticky-top">
                     <!-- Navbar Collapse -->
                     <div class="collapse navbar-collapse flex-column" id="listControlPanel">
                         <!-- profile Box -->
@@ -70,7 +84,7 @@
                                 <div class="w-100">
                                     <div class="d-flex align-items-center">
                                         <span class="mr-auto">مرحباً بك</span>
-                                        <a href="#" class="nav-link fa fa-user p-0 text-primary"></a>
+                                        <a href="sms-profile.html" class="nav-link fa fa-user p-0 text-primary"></a>
                                     </div>
                                     <span>Wael Hindam</span>
                                 </div>
@@ -78,13 +92,13 @@
                             <div class="card-body text-center">
                                 <div class="progress mb-2">
                                     <div class="label w-100 h-100 d-flex flex-column">
-                                        <span class="ltr m-auto">90<small>%</small></span>
+                                        <span id="ration" class="ltr m-auto">90<small>%</small></span>
                                         <small class="m-auto text-small">رصيدك الحالي</small>
                                     </div>
-                                    <div class="left-side half-circle"></div>
-                                    <div class="right-side half-circle"></div>
-                                    <!-- <div class="pie">
-                                    </div> -->
+                                    <div id="pie">
+                                        <div id="right-side" class="half-circle"></div>
+                                        <div id="left-side" class="half-circle"></div>
+                                    </div>
                                     <div class="shadow"></div>
                                 </div>
                                 <div class="mb-2">أرسلت: <span class="text-primary">6000 رسالة</span></div>
@@ -97,83 +111,83 @@
                         </div>
                         <!-- List Control Panel -->
                         <ul class="navbar-nav flex-column w-100 pb-3">
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-home"></span>صفحة الترحيب<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-send.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-commenting"></span>ارسال رسالة<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-favorite.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-heart"></span>الرسائل المفضلة<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-transfer.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-battery-three-quarters"></span>تحويل رصيد<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-archive.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-archive"></span>أرشيف الرسائل<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-recharge-orders.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-battery-empty"></span>طلبات الشحن<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-tickets-support.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-address-book"></span>تذاكر الدعم الفني<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-ready-msgs.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-envelope-open"></span>الرسائل الجاهزة<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-pop-replace.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-envelope"></span>رسائل المتغيرات<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-pending-msgs.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-send"></span>رسائل قيد الإرسال<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="sms-groups-grid.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-object-group"></span>الأرقام والمجموعات<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
-                                    <span class="fa fa-user"></span>طلب اسم المرسل<span class="fa fa-angle-down ml-auto"></span>
+                                <a href="sms-sender.html" class="nav-link d-flex align-items-center">
+                                    <span class="fa fa-user"></span>أسماء المرسل<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
-                                    <span class="fa fa-address-card"></span>الاعدادات الشخصية<span class="fa fa-angle-down ml-auto"></span>
+                                <a href="sms-profile.html" class="nav-link d-flex align-items-center">
+                                    <span class="fa fa-address-card"></span>الملف الشخصي<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="../faq.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-question-circle"></span>سؤال وإجابة<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="../packages.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-usd"></span>أسعار الرسائل<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link d-flex align-items-center">
+                                <a href="../contact.html" class="nav-link d-flex align-items-center">
                                     <span class="fa fa-headphones"></span>اتصل بنا<span class="fa fa-angle-down ml-auto"></span>
                                 </a>
                             </li>
@@ -239,7 +253,7 @@
                             <hr class="custom-small-border">
                         </header>
 
-                        <table class="table text-center">
+                        <table class="table text-center table-responsive-sm">
                             <thead class="bg-light">
                                 <tr>
                                     <th scope="col">م</th>
@@ -310,12 +324,11 @@
                             </div>
 
                             <div class="col-sm-6 text-center">
-                                    <span>رقم الصفحة</span>
-                                    <input id="numberPage" class="form-control d-inline-block w-25 text-center" type="number" name="numberPage" value="1">
-                                    <span>من</span>
-                                    <span>30</span>
-                                    <span>صفحة</span>
-                             
+                                <span>رقم الصفحة</span>
+                                <input id="numberPage" class="form-control d-inline-block w-25 text-center" type="number" name="numberPage" value="1">
+                                <span>من</span>
+                                <span>30</span>
+                                <span>صفحة</span>
                             </div>
 
                             <nav class="col-sm-3" aria-label="Page navigation ">
@@ -337,7 +350,7 @@
                             <hr class="custom-small-border">
                         </header>
 
-                        <table class="table text-center">
+                        <table class="table text-center table-responsive-sm">
                             <thead class="bg-light">
                                 <tr>
                                     <th scope="col">م</th>
@@ -408,12 +421,11 @@
                             </div>
 
                             <div class="col-sm-6 text-center">
-                                    <span>رقم الصفحة</span>
-                                    <input id="numberPage" class="form-control d-inline-block w-25 text-center" type="number" name="numberPage" value="1">
-                                    <span>من</span>
-                                    <span>30</span>
-                                    <span>صفحة</span>
-                             
+                                <span>رقم الصفحة</span>
+                                <input id="numberPage" class="form-control d-inline-block w-25 text-center" type="number" name="numberPage" value="1">
+                                <span>من</span>
+                                <span>30</span>
+                                <span>صفحة</span>
                             </div>
 
                             <nav class="col-sm-3" aria-label="Page navigation ">
@@ -431,6 +443,12 @@
                 </section>
             </main>
         </div>
+
+        <footer class="col-sm-12 col-md-9 col-lg-10 col-xl-8 offset-lg-2 offset-md-3 d-flex align-items-center">
+                <div><span class="fa fa-copyright text-primary"></span> جميع الحقوق محفوظة لمؤسسة الابتكار لتقنية المعلومات 2018</div>
+                <div class="ml-auto"><img src="../images/itlogo.png" class="img-fluid"></div>
+        </footer>
+        
         <script src="../js/jquery.min.js"></script> <!-- Jquery Minimum v3.3.1 -->
         <script src="../js/popper.min.js"></script> <!-- Popper Minimum v1.12.9 -->
         <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap JS Minimum v4.0 RLT -->

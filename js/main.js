@@ -110,4 +110,19 @@ $(function () {
             document.getElementById("left-side").setAttribute("style", "display: none;");
         }
     }
+
+    if ($("#cPanel-page").length) {
+        // Add Class active to menu list
+        var url = location.pathname;
+        var stringSlice = "cpanel/";
+        var sliceUrl = url.slice((url.indexOf(stringSlice) + stringSlice.length), url.indexOf(".html"));
+        console.log(sliceUrl);
+        $("#cPanel-page .navbar-nav .nav-item .nav-link").each(function () {
+            var sliceLink = $(this).attr("href").replace(".html", "");
+            if (sliceUrl && (sliceLink.indexOf(sliceUrl) >= 0 || sliceUrl.indexOf(sliceLink) >= 0)) {
+                $(this).parent().addClass("active");
+                // console.log($(this));
+            }
+        })
+    }
 })
